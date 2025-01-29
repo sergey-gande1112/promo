@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky VPN — Защита и свобода в интернете</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #00ff88;
+        }
+
+        a {
+            color: #00ff88;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #00cc66;
+        }
+
+        /* Шапка */
+        header {
+            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            animation: fadeInDown 1.5s ease;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        /* Навигация */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 20px;
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+
+        nav a:hover {
+            color: #00ff88;
+        }
+
+        /* Основной контент */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            animation: fadeInLeft 1s ease;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            animation: fadeInRight 1s ease;
+        }
+
+        /* Платформы */
+        .platforms {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .platform {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            margin: 20px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .platform:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .platform h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .platform a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00ff88;
+            color: #0a0a0a;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .platform a:hover {
+            background-color: #00cc66;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background-color: #222222;
+        }
+
+        .faq-item h3 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .faq-item p {
+            display: none;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #1a1a1a;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 2px solid #00ff88;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+/* Адаптация под мобильные устройства */
+        @media (max-width: 768px) {
+            .platform {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="animate__animated animate__fadeInDown">Sky VPN</h1>
+        <p class="animate__animated animate__fadeInUp">Ваша свобода и безопасность в интернете</p>
+    </header>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#features">Преимущества</a>
+        <a href="#platforms">Платформы</a>
+        <a href="#instructions">Инструкции</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    <div class="container">
+        <!-- О нас -->
+        <section id="about" class="section">
+            <h2>О нас</h2>
+            <p>Sky VPN — это современный VPN-сервис, который обеспечивает высокую скорость, безопасность и анонимность в интернете. Мы используем передовые технологии, такие как протокол VLESS, чтобы гарантировать вашу защиту.</p>
+        </section>
+
+        <!-- Преимущества -->
+        <section id="features" class="section">
+            <h2>Преимущества</h2>
+            <ul>
+                <li>Высокая скорость подключения</li>
+                <li>Полная анонимность</li>
+                <li>Поддержка всех платформ</li>
+                <li>Простота настройки</li>
+            </ul>
+        </section>
+
+        <!-- Платформы -->
+        <section id="platforms" class="section">
+            <h2>Подключение на разных платформах</h2>
+            <div class="platforms">
+                <div class="platform">
+                    <h3>iOS</h3>
+                    <p>Установите приложение Streisand для настройки Sky VPN.</p>
+                    <a href="https://apps.apple.com/ru/app/streisand/id6450534064" target="_blank">Скачать</a>
+                </div>
+                <div class="platform">
+                    <h3>Android</h3>
+                    <p>Используйте приложение V2RayNG для подключения.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang&hl=ru&gl=US&pli=1" target="_blank">Скачать</a>
+                </div>
+                <div class="platform">
+                    <h3>ПК</h3>
+                    <p>Скачайте NekoRay для настройки на компьютере.</p>
+                    <a href="https://github.com/MatsuriDayo/nekoray/releases/tag/3.26" target="_blank">Скачать</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Инструкции -->
+        <section id="instructions" class="section">
+            <h2>Инструкции по настройке</h2>
+            <p>Подробные инструкции по настройке Sky VPN на всех платформах.</p>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>Как настроить Sky VPN на iOS?</h3>
+                <p>Скачайте приложение Streisand и следуйте инструкциям на экране.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Sky VPN бесплатный?</h3>
+                <p>Мы предлагаем как бесплатные, так и премиум-тарифы.</p>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="section">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы, напишите нам на <a href="mailto:support@skyvpn.com">support@skyvpn.com</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sky VPN. Все права защищены.</p>
+    </footer>
+
+    <script>
+        // JavaScript для FAQ
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('p');
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
